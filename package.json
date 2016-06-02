@@ -1,0 +1,16 @@
+{
+  "name": "bundleplayer",
+  "version": "1.0.0",
+  "description": "BitTorrent Bundle Player",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bittorrent",
+    "bundle",
+    "player"
+  ],
+  "author": "Jeremy Shefer",
+  "license": "MIT"
+}

@@ -1,0 +1,317 @@
+/* ======================== Colors ===============================
+text / navbar black:    #1F2227
+active nav link:        #36393D
+loading grey:           #F9F9F9
+=================================================================*/
+/* ======================= Global Styles =========================*/
+html,
+body {
+    height: 100%;
+    font-size: 13px;
+    width: 100%;
+    background: #F9F9F9;
+}
+
+#loading {
+    display: none;
+}
+
+#loading.load {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+
+.main {
+    padding-top: 62px;
+    width: 100%;
+}
+
+.none {
+    visibility: hidden;
+}
+
+/* ================== Navbar Area ================*/
+
+.navbar-nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+ul.navbar-nav li a {
+    line-height: 62px;
+    padding: 0 12px;
+}
+
+ul.navbar-nav li a:hover,
+ul.navbar-nav li a:active {
+    background-color: #36393D;
+}
+
+.navbar-brand {
+    line-height: 18px;
+    margin-right: 24px;
+    padding-left: 12px;
+}
+
+#navbar form {
+    margin-top: 14px;
+}
+
+#navbar input.form-control {
+    background-color: #36393D;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #fff;
+}
+
+#navbar input.form-control:focus {
+    background-color: #fff;
+    color: #1F2227;
+}
+
+#navbar input.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/* ==============================  Video Area ===========================*/
+.splash {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #F9F9F9 url('//img2.bundle.media/bittorrent/image/upload/f_jpg,w_1440,q_70/content-bundles/production-df0ec56d-0fbb-bc2c-11e7-354ff3af9c4e/7d65141eff07bf07010c8b9e1dadc8de704d762bca63d6245f1fdee9cd0e8595/COHsqYoo_background.jpg') no-repeat;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+}
+
+.splash-info-bar {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.info-bar-count {
+    height: 40px;
+    line-height: 40px;
+    padding-right: 1em;
+    display: inline-block;
+    color: #fff;
+}
+
+.info-bar-count::after {
+    content: '|';
+    padding-left: 1em;
+}
+
+.info-bar-count:last-of-type::after {
+    content: '';
+}
+
+.info-bar-right {
+    display: inline-block;
+    color: #fff;
+    line-height: 25px;
+    margin-right: 1em;
+    margin-top: 8px;
+    padding: 0 15px;
+    border-radius: 2px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.info-bar-right.facebook {
+    background: #3b5998;;
+}
+
+.info-bar-right.twitter {
+    background: #00aced;
+}
+
+.play-div {
+    height: 500px;
+}
+
+.play {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 60px solid #fff;
+    margin: 182px auto 50px auto;
+    position: relative;
+    z-index: 1;
+    left: 10px;
+
+}
+
+.play::before {
+     content:'';
+     position:absolute;
+     top:-75px;
+     left:-115px;
+     bottom:-75px;
+     right: -35px;
+     border-radius: 50%;
+     border: 4px solid #FFFFFF;
+     z-index:-3;
+ }
+
+.play::after {
+     content:'';
+     opacity:0;
+    z-index: 4;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+ }
+
+.play:after:hover:before,
+.play:after:focus:before {
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+ }
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.vid-wrap {
+    margin: 0 auto;
+    width: 889px;
+    transition: all 0.2s;
+}
+
+video {
+    height: 500px;
+    margin: 0 auto;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+/*================== Subscription Section ====================*/
+.subscription-row {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.subscription {
+    border-bottom: 3px solid #143037;
+    margin-bottom: 20px;
+}
+
+.subscription-row .col-md-6:first-of-type {
+    border-right: 1px dashed #DDDDDD;
+}
+
+.subscribe-button {
+    height: 48px;
+    line-height: 48px;
+    border-radius: 5px;
+}
+
+.subscribe-button.download {
+    border: 1px solid #1F2227;
+}
+
+.subscribe-button.bundle {
+    background: #3399FF;
+    color: #fff;
+}
+
+.bundle-description {
+    padding: 50px 10px;
+}
+
+.entincement {
+    background: #fff;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.entincement.free {
+    border: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+}
+
+.entincement.subscribe {
+    border: 1px solid #3399FF;
+    margin-bottom: 50px;
+}
+
+.publisher {
+    background: #3399FF;
+    padding: 50px;
+}
+
+.become-publisher {
+    margin: 0 auto;
+    background: #fff;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #3399FF;
+}
+
+/*====================== Footer =======================*/
+footer {
+    background: #1F2227;
+    height: 200px;
+    color: #999999;
+}
+
+footer ul {
+    list-style: none;
+    color: #fff;
+    margin: 0 auto;
+    height: 120px;
+    width: 500px;
+    padding-top: 39px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-button {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+
+/* ================= Video Manipulation ========================= */
+video.scroll {
+    height: 75px;
+    margin: 0 auto;
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    z-index: 555;
+}
+
+.vid-wrap.scroll {
+    margin: 0;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    position: fixed;
+    left: 0;
+    z-index: 554;
+}
+
+.video.scroll {
+    /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));*/
+}
